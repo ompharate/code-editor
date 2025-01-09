@@ -46,7 +46,7 @@ const Editor = () => {
           language: e.data.language,
           name: e.data.files[0].name,
         });
-        if (e.data.result.success) {
+        if (e.data.result.success && e.data.action === "runComplete") {
           triggerConfetti();
         }
         localStorage.setItem("editorCode", e.data.files[0].content);
