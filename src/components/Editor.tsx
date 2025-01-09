@@ -70,8 +70,8 @@ const Editor = () => {
     <div>
       {isConfettiActive && (
         <Confetti
-          width={window.innerWidth}
-          height={window.innerHeight}
+          width={window.innerWidth - 200}
+          height={window.innerHeight - 200}
           numberOfPieces={200}
         />
       )}
