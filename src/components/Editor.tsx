@@ -85,7 +85,7 @@ const Editor = () => {
       <TwoButtonBox
         editorRef={editorRef}
         content={content}
-        setContent={setContent}
+      
       />
     </div>
   );

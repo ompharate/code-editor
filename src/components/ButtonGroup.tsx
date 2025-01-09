@@ -3,16 +3,13 @@ import { saveCodeToEditor } from "../utils/util";
 import { useTheme } from "../provider/themeProvider";
 import beautify from "js-beautify";
 import { Content } from "./Editor";
-type Theme = "dark" | "light";
 
 const TwoButtonBox = ({
   editorRef,
   content,
-  setContent,
 }: {
   editorRef: React.RefObject<HTMLIFrameElement> | null;
   content: Content;
-  setContent: React.Dispatch<React.SetStateAction<Content>>;
 }) => {
   const { toggleTheme, theme } = useTheme();
 
