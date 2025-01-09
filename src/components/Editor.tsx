@@ -79,7 +79,7 @@ const Editor = () => {
         ref={editorRef}
         frameBorder="0"
         height="450px"
-        src={`https://onecompiler.com/embed/javascript?codeChangeEvent=true&listenToEvents=true&hideRun=true&theme=${theme}`}
+        src={`https://onecompiler.com/embed/javascript?codeChangeEvent=true&hideLanguageSelection=true&listenToEvents=true&hideRun=true&theme=${theme}`}
         width="100%"
       ></iframe>
       <TwoButtonBox
